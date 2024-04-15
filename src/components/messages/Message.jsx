@@ -17,9 +17,11 @@ const Message = ({ message }) => {
 					<img src={profilePic} alt="user avatar" />
 				</div>
 			</div>
-			<div className={`chat-bubble ${bubbleBgColor}`}>{message.message}</div>
+			<div className={`chat-bubble pb-2 ${bubbleBgColor}`}>
+				{message.message}
+			</div>
 			<div className="chat-footer opacity-50 text-xs flex gap-1 items-center">
-				11:42
+				{message.createdAt}
 			</div>
 		</div>
 	)
